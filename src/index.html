@@ -12,8 +12,25 @@
     </head>
 
     <body>
-        <h1 class="text-primary">Bootstrap 4.0.0 Starter</h1>
+        <nav class="navbar navbar-dark bg-primary mb-3">
+            <div class="container">
+                <a class="navbar-brand text-white">GitHub Finder</a>
+            </div>
+        </nav>
 
+        <div class="container search-container">
+            <div class="search card card-body">
+                <h1>Search GitHub Users</h1>
+                <p class="lead">Enter a username to fetch a user profile and repos</p>
+                <input type="text" id="searchUser" class="form-control" placeholder="GitHub Username...">
+            </div>
+            <br>
+            <div id="profile"></div>
+        </div>
+
+        <footer class="mt-5 p-3 text-center bg-light">
+            GitHub Finder &copy;
+        </footer>
 
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
